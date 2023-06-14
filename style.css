@@ -1,13 +1,29 @@
 /* Your Styles */
 
 /* diagnostic styling. remove when done */
-* {
-    outline: 1px dotted gray;
+
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+h2 {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px;
 }
+figcaption {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10px;  
+
+}
+
+
 
 /* Layout with css grid */
 body {
     display: grid;
+    background-color: #F6F3EE;
 }
 
 main {
@@ -20,17 +36,26 @@ main {
 }
 
 figure {
- margin: 0;
+ margin: 30px;
  /* set your width */
- width: 33%;
+ width: 330px;
 }
-  
+
+::backdrop {
+    background: #f6f3eed0;
+    
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+dialog {
+    animation: fadeIn 1s;
+    border: none;
+    box-shadow: 0 0 40px 40px #cfcecf88;
+
 /* Backdrop for modal overlay */
 ::backdrop {
     background: rgba(0, 0, 0, 0.75);
-}
-
-/* Animation */
-dialog {
-    animation: fadeIn 1s;
 }
